@@ -7,4 +7,8 @@ get "home" => "pages#home"
 get "profile" => "pages#profile"
  root :to =>  'pages#home'
 resources :pages
+
+get 'user/:id' => 'pages#profile'
+
+get 'explore' => 'pages#explore'
 end
